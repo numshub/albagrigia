@@ -13,7 +13,7 @@ export class LogoComponent implements OnInit {
   purples: string[] = [];
   blues: string[] = [];
   oranges: string[] = [];
-  selectedRALGray = '7030';
+  selectedRALGray = '7000';
   selectedRALOrange = '1037';
   selectedRALPurple = '4004';
   selectedRALBlue = '5015';
