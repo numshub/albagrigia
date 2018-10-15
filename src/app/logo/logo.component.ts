@@ -42,7 +42,6 @@ export class LogoComponent implements OnInit {
 
   onSelect(event: MouseEvent) {
     const target = <HTMLInputElement>event.target;
-    console.log(target.id);
     if (target.id.startsWith('7')) {
       this.selectedRALGray = target.id;
       this.selectedGray = this.cols[this.selectedRALGray]['rgb_hex'];
