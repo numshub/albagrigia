@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import colors from 'src/assets/colors.json';
+import * as default_colors from 'src/assets/default_colors.json';
 
 @Component({
   selector: 'app-logo',
@@ -13,10 +14,10 @@ export class LogoComponent implements OnInit {
   purples: string[] = [];
   blues: string[] = [];
   oranges: string[] = [];
-  selectedRALGray = '7000';
-  selectedRALOrange = '1037';
-  selectedRALPurple = '4004';
-  selectedRALBlue = '5015';
+  selectedRALGray: string = default_colors.selectedRALGray;
+  selectedRALOrange: string = default_colors.selectedRALOrange;
+  selectedRALPurple: string = default_colors.selectedRALPurple;
+  selectedRALBlue: string = default_colors.selectedRALBlue;
   selectedGray = colors[this.selectedRALGray]['rgb_hex'];
   selectedOrange = colors[this.selectedRALOrange]['rgb_hex'];
   selectedPurple = colors[this.selectedRALPurple]['rgb_hex'];
